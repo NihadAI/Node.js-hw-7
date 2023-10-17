@@ -1,0 +1,18 @@
+2023-09-25T15:29:33.118Z info: Method: POST, URL: /auth/register, Body: {"email":"test123@gmail.com","password":"test123","confirmPassword":"test123"}
+2023-09-25T15:30:30.242Z info: Method: GET, URL: /newsposts
+2023-09-25T15:30:30.250Z warn: Error: Unauthorized
+2023-09-25T15:30:35.873Z info: Method: POST, URL: /auth/register, Body: {"email":"test@gmail.com","password":"test","confirmPassword":"test"}
+2023-09-25T15:30:57.219Z info: Method: POST, URL: /auth/register, Body: {"email":"test@gmail.com","password":"test","confirmPassword":"test"}
+2023-09-25T15:31:03.792Z info: Method: POST, URL: /auth/login, Body: {"email":"test@gmail.com","password":"test"}
+2023-09-25T15:31:27.233Z info: Method: GET, URL: /newsposts
+2023-09-25T15:31:27.241Z warn: Error: Unauthorized
+2023-09-25T15:31:34.961Z info: Method: GET, URL: /newsposts
+2023-09-25T15:32:28.092Z info: Method: GET, URL: /newsposts/a94a397d-ea51-4a93-bd1d-2cf1c332cd25
+2023-09-25T15:33:20.613Z info: Method: POST, URL: /newsposts, Body: {"title":"У зоопарку Київі лисичка народила лисеня","text":"В Чернігівському заопарку сталася чудова подія!","genre":"O","isPrivate":false}
+2023-09-25T15:33:20.618Z warn: ValidationError: must be equal to one of the allowed values
+2023-09-25T15:33:27.111Z info: Method: POST, URL: /newsposts, Body: {"title":"У зоопарку Київі лисичка народила лисеня","text":"В Чернігівському заопарку сталася чудова подія!","genre":"Other","isPrivate":false}
+2023-09-25T15:35:32.636Z info: Method: PUT, URL: /newsposts/be7210e8-c66c-42e3-aa03-dbb8a630e664, Body: {"title":"У зоопарку Київі лисичка народила лисеня","text":"В Чернігівському заопарку сталася чудова подія!","genre":"Other","isPrivate":true}
+2023-09-25T15:35:48.308Z info: Method: PUT, URL: /newsposts/be7210e8-c66c-42e3-aa03-dbb8a630e664, Body: {"genre":"Politic","isPrivate":true}
+2023-09-25T15:35:48.319Z warn: ValidationError: must have required property 'title',must have required property 'text'
+2023-09-25T15:35:54.791Z info: Method: PUT, URL: /newsposts/be7210e8-c66c-42e3-aa03-dbb8a630e664, Body: {"title":"У зоопарку Київі лисичка народила лисеня","text":"В Чернігівському заопарку сталася чудова подія!!!","genre":"Other","isPrivate":true}
+2023-09-25T15:36:24.302Z info: Method: DELETE, URL: /newsposts/be7210e8-c66c-42e3-aa03-dbb8a630e664

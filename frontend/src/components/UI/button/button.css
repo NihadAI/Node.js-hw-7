@@ -1,0 +1,49 @@
+.btn {
+    border: none;
+    background: none;
+    font-family: Aribau Grotesk, sans-serif;
+}
+
+.default {
+    color: #fff;
+    text-transform: uppercase;
+    transition: ease 0.3s;
+    font-size: 18px;
+}
+
+.default:hover {
+    color: #00768C;
+}
+
+.confirm {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 40px 50px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+
+.confirm span {
+    z-index: 2;
+}
+
+.confirm::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background-color: #00768C;
+    left: 0;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    z-index: 1;
+}
+
+.confirm:hover::before {
+    height: 100%; 
+   
+}
+

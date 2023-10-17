@@ -1,0 +1,9 @@
+2023-09-23T10:25:08.651Z error: Message: Post not found, Stack: Error: Post not found
+    at NewsPostsService.getById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\bll\NewsPosts.service.js:30:23)
+    at async NewsController.getPostById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\controllers\NewsController.js:51:30)
+2023-09-23T10:25:23.590Z error: Message: Post not found, Stack: Error: Post not found
+    at NewsPostsService.getById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\bll\NewsPosts.service.js:30:23)
+    at async NewsController.getPostById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\controllers\NewsController.js:51:30)
+2023-09-23T10:25:30.755Z error: Message: Post not found, Stack: Error: Post not found
+    at NewsPostsService.getById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\bll\NewsPosts.service.js:30:23)
+    at async NewsController.getPostById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\controllers\NewsController.js:51:30)

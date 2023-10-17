@@ -1,0 +1,89 @@
+2023-09-23T08:33:50.187Z info: Method: GET, URL: /newsposts?page=0&size=3
+2023-09-23T08:33:50.196Z info: Method: GET, URL: /newsposts?page=0&size=3
+2023-09-23T08:34:32.561Z info: Method: GET, URL: /newsposts?page=0&size=3
+2023-09-23T08:34:32.565Z info: Method: GET, URL: /newsposts?page=0&size=3
+2023-09-23T08:34:36.578Z info: Method: GET, URL: /newsposts?page=0&size=3
+2023-09-23T08:34:36.582Z info: Method: GET, URL: /newsposts?page=0&size=3
+2023-09-23T08:34:37.140Z info: Method: GET, URL: /newsposts?page=1&size=3
+2023-09-23T08:34:37.422Z info: Method: GET, URL: /newsposts?page=2&size=3
+2023-09-23T08:34:40.151Z info: Method: GET, URL: /newsposts?page=1&size=3
+2023-09-23T08:34:40.608Z info: Method: GET, URL: /newsposts?page=2&size=3
+2023-09-23T08:34:40.934Z info: Method: GET, URL: /newsposts?page=3&size=3
+2023-09-23T08:34:42.730Z info: Method: GET, URL: /newsposts/98f03854-148f-4f34-8bc7-2632ac9b673d
+2023-09-23T08:34:42.740Z warn: Error: Unauthorized
+2023-09-23T08:34:42.743Z info: Method: GET, URL: /newsposts/98f03854-148f-4f34-8bc7-2632ac9b673d
+2023-09-23T08:34:42.746Z warn: Error: Unauthorized
+2023-09-23T08:34:45.356Z info: Method: GET, URL: /newsposts?page=0&size=3
+2023-09-23T08:34:45.360Z info: Method: GET, URL: /newsposts?page=0&size=3
+2023-09-23T08:40:16.028Z info: Method: GET, URL: /newsposts?page=0&size=3
+2023-09-23T08:40:16.037Z info: Method: GET, URL: /newsposts?page=0&size=3
+2023-09-23T08:42:18.511Z info: Method: GET, URL: /newsposts
+2023-09-23T08:42:45.329Z info: Method: GET, URL: /newsposts
+2023-09-23T08:42:45.336Z warn: Error: Unauthorized
+2023-09-23T08:43:32.124Z info: Method: GET, URL: /newsposts/:id
+2023-09-23T08:43:32.127Z warn: Error: Unauthorized
+2023-09-23T08:44:25.374Z info: Method: POST, URL: /newsposts
+2023-09-23T08:44:25.376Z warn: Error: Unauthorized
+2023-09-23T08:54:15.059Z info: Method: GET, URL: //register
+2023-09-23T08:54:39.975Z info: Method: GET, URL: /register
+2023-09-23T08:54:46.385Z info: Method: GET, URL: /auth/register
+2023-09-23T08:54:56.025Z info: Method: POST, URL: /auth/register
+2023-09-23T08:54:56.029Z warn: ValidationError: must have required property 'email',must have required property 'password'
+2023-09-23T08:55:00.876Z info: Method: POST, URL: /register
+2023-09-23T08:55:03.553Z info: Method: POST, URL: /auth/register
+2023-09-23T08:55:03.554Z warn: ValidationError: must have required property 'email',must have required property 'password'
+2023-09-23T08:59:59.652Z info: Method: POST, URL: /auth/register
+2023-09-23T08:59:59.673Z warn: ValidationError: must have required property 'email',must have required property 'password'
+2023-09-23T09:00:03.698Z info: Method: POST, URL: /auth/register
+2023-09-23T09:00:03.700Z warn: ValidationError: must have required property 'email',must have required property 'password'
+2023-09-23T09:00:04.480Z info: Method: POST, URL: /auth/register
+2023-09-23T09:00:04.481Z warn: ValidationError: must have required property 'email',must have required property 'password'
+2023-09-23T09:00:36.700Z info: Method: POST, URL: /auth/login
+2023-09-23T09:04:37.155Z info: Method: POST, URL: /auth/register, Body: {"email":"{{$email}}","password":"{{$password}}"}
+2023-09-23T09:05:03.085Z info: Method: POST, URL: /auth/register, Body: {"email":"{{$email}}","password":"{{$password}}","confirmPassword":"{{$password}}"}
+2023-09-23T09:05:03.087Z warn: ValidationError: must match format "email"
+2023-09-23T09:05:22.165Z info: Method: POST, URL: /auth/register, Body: {"email":"{{email}}","password":"{{password}}","confirmPassword":"{{password}}"}
+2023-09-23T09:05:22.166Z warn: ValidationError: must match format "email"
+2023-09-23T09:05:52.258Z info: Method: POST, URL: /auth/register, Body: {"email":"test123@gmail.com","password":"test123","confirmPassword":"test123"}
+2023-09-23T09:06:26.127Z info: Method: POST, URL: /auth/login, Body: {"email":"test123@gmail.com","password":"test123"}
+2023-09-23T09:06:31.441Z info: Method: POST, URL: /auth/login, Body: {"email":"test123@gmail.com","password":"test123"}
+2023-09-23T09:52:12.957Z info: Method: GET, URL: /newsposts
+2023-09-23T09:52:12.968Z warn: Error: Unauthorized
+2023-09-23T09:52:13.137Z info: Method: GET, URL: /newsposts/%7B%7B$id%7D%7D
+2023-09-23T09:52:13.153Z warn: Error: Unauthorized
+2023-09-23T09:52:13.232Z info: Method: POST, URL: /newsposts
+2023-09-23T09:52:13.233Z warn: Error: Unauthorized
+2023-09-23T09:52:13.310Z info: Method: PUT, URL: /newsposts/:id
+2023-09-23T09:52:13.312Z warn: Error: Unauthorized
+2023-09-23T09:52:13.388Z info: Method: DELETE, URL: /newsposts/:id
+2023-09-23T09:52:13.389Z warn: Error: Unauthorized
+2023-09-23T09:52:13.466Z info: Method: POST, URL: /auth/register, Body: {"email":"test123@gmail.com","password":"test123","confirmPassword":"test123"}
+2023-09-23T09:52:13.542Z info: Method: POST, URL: /auth/login
+2023-09-23T09:53:46.024Z info: Method: GET, URL: /newsposts
+2023-09-23T09:53:46.025Z warn: Error: Unauthorized
+2023-09-23T09:54:17.396Z info: Method: GET, URL: /newsposts
+2023-09-23T09:54:17.397Z warn: Error: Unauthorized
+2023-09-23T09:54:38.513Z info: Method: GET, URL: /newsposts
+2023-09-23T09:54:38.514Z warn: Error: Unauthorized
+2023-09-23T09:54:44.891Z info: Method: GET, URL: /newsposts
+2023-09-23T10:25:05.844Z info: Method: GET, URL: /newsposts
+2023-09-23T10:25:08.648Z info: Method: GET, URL: /newsposts/%7B%7B$id%7D%7D
+2023-09-23T10:25:08.651Z error: Message: Post not found, Stack: Error: Post not found
+    at NewsPostsService.getById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\bll\NewsPosts.service.js:30:23)
+    at async NewsController.getPostById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\controllers\NewsController.js:51:30)
+2023-09-23T10:25:23.586Z info: Method: GET, URL: /newsposts/%7B%7B$id%7D%7D
+2023-09-23T10:25:23.590Z error: Message: Post not found, Stack: Error: Post not found
+    at NewsPostsService.getById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\bll\NewsPosts.service.js:30:23)
+    at async NewsController.getPostById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\controllers\NewsController.js:51:30)
+2023-09-23T10:25:27.591Z info: Method: GET, URL: /newsposts%7B%7B$id%7D%7D
+2023-09-23T10:25:30.753Z info: Method: GET, URL: /newsposts/%7B%7B$id%7D%7D
+2023-09-23T10:25:30.755Z error: Message: Post not found, Stack: Error: Post not found
+    at NewsPostsService.getById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\bll\NewsPosts.service.js:30:23)
+    at async NewsController.getPostById (C:\Users\dima6\Desktop\gitlab\homeworks-DanIT\node-js\homework-10\backend\dist\src\controllers\NewsController.js:51:30)
+2023-09-23T10:25:40.300Z info: Method: POST, URL: /newsposts
+2023-09-23T10:25:40.305Z warn: ValidationError: must have required property 'title',must have required property 'text',must have required property 'genre',must have required property 'isPrivate'
+2023-09-23T10:25:43.459Z info: Method: PUT, URL: /newsposts/:id
+2023-09-23T10:25:43.462Z warn: ValidationError: must have required property 'title',must have required property 'text',must have required property 'genre',must have required property 'isPrivate'
+2023-09-23T10:27:41.588Z info: Method: GET, URL: /newsposts/a94a397d-ea51-4a93-bd1d-2cf1c332cd25
+2023-09-23T13:15:43.937Z info: Method: GET, URL: /newsposts/a94a397d-ea51-4a93-bd1d-2cf1c332cd25
+2023-09-23T13:15:44.056Z warn: Error: Unauthorized

@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "f9c40379-2f99-4c05-88ed-1645d7d83888",
+		"name": "News",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28488826"
+	},
+	"item": [
+		{
+			"name": "MockNewsposts",
+			"item": [
+				{
+					"name": "get all nesposts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{$token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{$api}}/newsposts",
+							"host": [
+								"{{$api}}"
+							],
+							"path": [
+								"newsposts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get newspost by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{$token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{$api}}/newsposts/{{$firstNewsPostId}}",
+							"host": [
+								"{{$api}}"
+							],
+							"path": [
+								"newsposts",
+								"{{$firstNewsPostId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create newspost",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{$token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"У зоопарку Київі лисичка народила лисеня\",\r\n    \"text\": \"В Чернігівському заопарку сталася чудова подія!\",\r\n    \"genre\": \"Other\",\r\n    \"isPrivate\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{$api}}/newsposts",
+							"host": [
+								"{{$api}}"
+							],
+							"path": [
+								"newsposts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change newspost",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{$token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"У зоопарку Київі лисичка народила лисеня\",\r\n    \"text\": \"В Чернігівському заопарку сталася чудова подія!!!\",\r\n    \"genre\": \"Other\",\r\n    \"isPrivate\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{$api}}/newsposts/{{$newNewsPost}}",
+							"host": [
+								"{{$api}}"
+							],
+							"path": [
+								"newsposts",
+								"{{$newNewsPost}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete newspost",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{$token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{$api}}/newsposts/{{$newNewsPost}}",
+							"host": [
+								"{{$api}}"
+							],
+							"path": [
+								"newsposts",
+								"{{$newNewsPost}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"{{$email}}\",\r\n    \"password\":\"{{$password}}\",\r\n    \"confirmPassword\":\"{{$password}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{$api}}/auth/register",
+							"host": [
+								"{{$api}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"{{$email}}\",\r\n    \"password\":\"{{$password}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{$api}}/auth/login",
+							"host": [
+								"{{$api}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "$api",
+			"value": "http://localhost:8000",
+			"type": "string"
+		},
+		{
+			"key": "$email",
+			"value": "test@gmail.com",
+			"type": "string"
+		},
+		{
+			"key": "$password",
+			"value": "test",
+			"type": "string"
+		},
+		{
+			"key": "$token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNjk1NjU1ODYzLCJleHAiOjE2OTU2NjMwNjN9.15x5BB7v2tXLLsEW6PZ1WD03tzN0qwTZH0gCn85lolM",
+			"type": "string"
+		},
+		{
+			"key": "$firstNewsPostId",
+			"value": "a94a397d-ea51-4a93-bd1d-2cf1c332cd25",
+			"type": "string"
+		},
+		{
+			"key": "$newNewsPost",
+			"value": "be7210e8-c66c-42e3-aa03-dbb8a630e664",
+			"type": "string"
+		}
+	]
+}

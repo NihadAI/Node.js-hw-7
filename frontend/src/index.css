@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Aribau Grotesk;
+  src: url('../public//fonts/AribauGroteskTRIAL-Rg.otf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Aribau Grotesk, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+[class*="__container"] {
+	padding: 0 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  [class*="__container"] {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  [class*="__container"] {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  [class*="__container"] {
+    padding: 0 20px;
+  }
+}
